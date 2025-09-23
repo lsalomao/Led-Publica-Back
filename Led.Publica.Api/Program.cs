@@ -39,7 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors(); // Habilita CORS para todas as rotas
+app.UseCors(); 
 
 app.UseAuthorization();
 
