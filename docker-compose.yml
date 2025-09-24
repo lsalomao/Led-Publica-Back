@@ -1,0 +1,6 @@
+services:
+  led.publica.api:
+    image: ${DOCKER_REGISTRY-}ledpublicaapi
+    build:
+      context: .
+      dockerfile: Led.Publica.Api/Dockerfile
