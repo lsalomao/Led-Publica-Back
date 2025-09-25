@@ -2,10 +2,11 @@ version: "3.8"
 
 services:
   led-publica-api:
+    container_name: led-publica-api
     build:
       context: .
       dockerfile: Led.Publica.Api/Dockerfile
-    container_name: led-publica-api
+    image: ledpublicaapi
     restart: always
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
@@ -14,7 +15,7 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - led-network
+      - led-network      
 
 networks:
   led-network:
